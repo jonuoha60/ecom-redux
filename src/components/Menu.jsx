@@ -57,7 +57,6 @@ export const Menu = (props) => {
         <h1>Top Nigerian Menu Items</h1>
         <p className="subtext">Eat. Drink. Relax.</p>
         {renderMenu()}
-                <h1>Native Igbo Menu</h1>
 
       </section>
 
