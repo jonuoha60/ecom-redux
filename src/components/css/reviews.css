@@ -1,0 +1,230 @@
+/* ===== Reviews Section ===== */
+.review-top {
+  padding: 30px 0;
+}
+
+.reviews-section {
+  padding: 2rem 2rem;
+  background: #fdfdfd;
+}
+
+.reviews-section h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtext-reviews {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.review-card {
+  background: #fff;
+  padding: 2rem;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card h3 {
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.review-card .stars {
+  color: #ffd60a;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.review-card .comment {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Hero Quote */
+.hero-quote {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.hero-quote h1 {
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 1rem;
+  color: #ffd60a; /* golden accent */
+}
+
+.hero-quote p {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #f0f0f0;
+}
+
+/* ===== Newsletter Section ===== */
+.newsletter {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 25px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 400px;
+  max-width: 100%;
+}
+
+.newsletter button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #ba181b;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #e63946;
+}
+
+.newsletter .thankyou {
+  font-size: 1.2rem;
+  color: #2a2a2a;
+  margin-top: 1rem;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 1024px) {
+  .reviews-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtext-reviews {
+    font-size: 1rem;
+  }
+
+  .hero-quote h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-quote p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .reviews-section h1 {
+    font-size: 2rem;
+
+  }
+
+  .subtext-reviews {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .hero-quote h1 {
+    font-size: 2rem;
+  }
+
+  .hero-quote p {
+    font-size: 1rem;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .reviews-section h1 {
+    text-align: center;
+
+  }
+
+  .subtext-reviews {
+    font-size: 0.9rem;
+  }
+
+  .hero-quote h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-quote p {
+    font-size: 0.95rem;
+  }
+
+  .newsletter h2 {
+    font-size: 20px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,105 @@
+.story {
+  padding: 5rem 5rem;
+  text-align: center;
+  position: relative;
+  border: 2px solid #eee; /* subtle border around section */
+  border-radius: 20px;     /* smooth corners */
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story h1 {
+  font-size: 3.3rem;
+  color: #ba181b; /* rich red */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+/* underline for heading */
+.story h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #ffd60a; /* golden line */
+  margin: 1rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.story p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.story .highlight {
+  color: #ffd60a; /* yellow highlight */
+  font-weight: bold;
+}
+
+/* ===== Responsive Story Section ===== */
+@media (max-width: 1024px) {
+  .story {
+    padding: 4rem 3rem;
+  }
+
+  .story h1 {
+    font-size: 2.8rem;
+  }
+
+  .story h1::after {
+    width: 50%;
+    height: 3px;
+  }
+
+  .story p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    padding: 3rem 2rem;
+  }
+
+  .story h1 {
+    font-size: 2.4rem;
+  }
+
+  .story h1::after {
+    width: 50%;
+    height: 3px;
+  }
+
+  .story p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story {
+    padding: 2rem 1rem;
+  }
+
+  .story h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .story h1::after {
+    width: 40%;
+    height: 2px;
+  }
+
+  .story p {
+    font-size: 0.95rem;
+  }
+}

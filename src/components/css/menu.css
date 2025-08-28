@@ -1,0 +1,263 @@
+/* ===== Layout & Sections ===== */
+.cuisines {
+  text-align: center;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section h1 {
+  font-size: 3rem;
+  color: #161a1d; /* deep red */
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+
+.subtext {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* ===== Menu Grid ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0.3rem;
+  text-align: center;
+  /* box-shadow: 0 6px 12px rgba(0,0,0,0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.menu-item h2 {
+  color: #ba181b;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.menu-item p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #ffd60a;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ===== Buttons ===== */
+.check-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  background: #ffd60a;
+  color: #111;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.check-btn:hover {
+  background: #e6c200;
+  transform: scale(1.05);
+}
+
+/* ===== Popup Overlay ===== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* ===== Popup Content ===== */
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+
+  animation: scaleUp 0.3s ease forwards;
+}
+
+.popup-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.popup-content h2 {
+  color: #ba181b;
+  margin-bottom: 0.8rem;
+}
+
+.popup-content p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+
+.popup-content .price {
+  font-weight: bold;
+  color: #ffd60a;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Close Button ===== */
+.close-btn {
+  padding: 0.6rem 1.3rem;
+  background: #ba181b;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #8a1014;
+  transform: scale(1.05);
+}
+
+
+.add-to-cart {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 1rem; /* spacing between buttons */
+  margin-top: 1.5rem;
+}
+
+.add-to-cart button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-to-cart .close-btn:first-child {
+  background: #ba181b;
+  color: white;
+}
+
+.add-to-cart .close-btn:first-child:hover {
+}
+
+.add-to-cart .close-btn:last-child {
+  background: #858585;
+  color: white;
+}
+
+
+
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ===== Responsive Grid ===== */
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .menu-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .menu-item p {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 1rem;
+  }
+
+  .menu-item {
+    padding: 0.5rem;
+  }
+
+  .menu-img {
+    height: 160px;
+  }
+
+  .menu-item h2 {
+    font-size: 1.1rem;
+  }
+
+  .menu-item p {
+    font-size: 0.85rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .check-btn {
+    width: 100%; /* full-width button on mobile */
+    padding: 0.8rem;
+  }
+
+  .popup-content img {
+    height: 200px;
+  }
+}

@@ -1,0 +1,73 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd; /* soft background */
+  color: #333;
+font-family: "Montserrat", sans-serif;
+
+}
+
+header {
+  background: #070607; /* deep wine red for luxury restaurant feel */
+  padding: 1rem 2rem;
+  color: #7b2d26;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive; /* fancy script logo */
+  color: #f8d49d; /* golden accent */
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f0e2ce;
+    /* color: #d62828; */
+
+    font-family: "Signika", sans-serif;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar ul li .active {
+  display: block;
+  color: #f8d49d;
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* makes underline thicker */
+  text-underline-offset: 4px; /* pushes underline a bit lower for better look */
+  transition: 0.3s;
+}
+
+
+.navbar ul li a:hover {
+  color: #f8d49d;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
