@@ -34,8 +34,6 @@ cd my-app
 ### 2. Install dependencies
 npm install
 
-3. Run the app
-bash
-Copy code
-npm run dev   # if using Vite
-npm start     # if using CRA
+### 3. Run the app
+
+npm run dev   
